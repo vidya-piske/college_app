@@ -1,0 +1,53 @@
+.menu-page-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff; 
+    height: 100vh;
+}
+
+.custom-table {
+    width: 80%; /* Adjust table width as needed */
+    margin-top: 20px; /* Add margin to top */
+}
+
+.ant-table-thead > tr > th {
+    background-color: #333; /* Dark color for table header row */
+    color: #fff; /* White text color for table header */
+}
+
+.ant-table-thead > tr > th div {
+    color: #888; /* Dark gray color for table column names */
+}
+
+.ant-table-tbody > tr:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray color for alternate rows */
+}
+
+.custom-header {
+    background-color: #333; /* Dark color */
+    color: white; /* Text color */
+}
+
+.custom-table .ant-table-thead > tr > th {
+    background-color: #e5dede; /* Change this to your desired dark gray color */
+    color: #000; /* Change text color to white for better contrast */
+}
+
+.ant-table-wrapper .ant-table-column-title {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    color: black;
+}
+
+.dropdown-width{
+    width: 100%;
+}
+
+
+
+
+
+
