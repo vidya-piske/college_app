@@ -22,21 +22,32 @@ const Dashboard = () => {
       <h1 style={{ marginBottom: '100px', display: 'flex', justifyContent: 'center' }}>College Admin Panel</h1>
       <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center' }}>
         <div style={{ display: 'flex', flexDirection: 'row' }}>
-          <Card
-            bordered={false}
-            style={{
-              width: 200,
-              position: 'relative',
-              backgroundColor: '#B989F7',
-              color: 'white',
-              marginRight: '16px',
-              cursor: 'pointer'
-            }}
-            onClick={handleStudentClick}
-          >
-            <p style={{ color: 'white', margin: 0, fontSize: '16px' }}>Student</p>
-            <IdcardOutlined style={{ fontSize: '24px', color: 'white' }} />
-          </Card>
+        <Card
+    bordered={false}
+    style={{
+        width: 200,
+        position: 'relative',
+        backgroundColor: '#B989F7',
+        color: 'white',
+        marginRight: '16px',
+        cursor: 'pointer',
+        display: 'flex',          // Make the container a flex container
+        flexDirection: 'column', // Arrange children vertically
+        alignItems: 'center',     // Center children horizontally
+        justifyContent: 'center'
+    }}
+    onClick={handleStudentClick}
+>
+    <p style={{ color: 'white', margin: 0, fontSize: '16px' }}>Student</p>
+    <div style={{ display: 'flex',          // Make the container a flex container
+        flexDirection: 'column', // Arrange children vertically
+        alignItems: 'center',     // Center children horizontally
+        justifyContent: 'center' }}>
+ <IdcardOutlined style={{ fontSize: '24px', color: 'white' }} />
+    </div>
+   
+</Card>
+
           <Card
             bordered={false}
             style={{
@@ -44,12 +55,21 @@ const Dashboard = () => {
               position: 'relative',
               backgroundColor: '#3FCCE3',
               color: 'white',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              display: 'flex',          // Make the container a flex container
+              flexDirection: 'column', // Arrange children vertically
+              alignItems: 'center',     // Center children horizontally
+              justifyContent: 'center'
             }}
             onClick={handleDepartmentClick}
           >
             <p style={{ color: 'white', margin: 0, fontSize: '16px' }}>Department</p>
+            <div style={{ display: 'flex',          // Make the container a flex container
+        flexDirection: 'column', // Arrange children vertically
+        alignItems: 'center',     // Center children horizontally
+        justifyContent: 'center' }}>
             <ApartmentOutlined style={{ fontSize: '24px', color: 'white' }} /> 
+            </div>
           </Card>
         </div>
         <div style={{ display: 'flex', flexDirection: 'row', marginLeft: '20px' }}>
@@ -61,12 +81,21 @@ const Dashboard = () => {
               backgroundColor: '#13C155',
               color: 'white',
               marginRight: '16px',
-              cursor: 'pointer' 
+              cursor: 'pointer',
+              display: 'flex',          // Make the container a flex container
+        flexDirection: 'column', // Arrange children vertically
+        alignItems: 'center',     // Center children horizontally
+        justifyContent: 'center' 
             }}
             onClick={handleSemesterClick}
           >
             <p style={{ color: 'white', margin: 0, fontSize: '16px' }}>Semester</p>
+            <div style={{ display: 'flex',          // Make the container a flex container
+        flexDirection: 'column', // Arrange children vertically
+        alignItems: 'center',     // Center children horizontally
+        justifyContent: 'center' }}>
             <CalendarOutlined style={{ fontSize: '24px', color: 'white' }} /> 
+            </div>
           </Card>
           <Card
             bordered={false}
@@ -75,12 +104,21 @@ const Dashboard = () => {
               position: 'relative',
               backgroundColor: '#1ECAA3',
               color: 'white',
-              cursor: 'pointer'
+              cursor: 'pointer',
+              display: 'flex',          // Make the container a flex container
+        flexDirection: 'column', // Arrange children vertically
+        alignItems: 'center',     // Center children horizontally
+        justifyContent: 'center'
             }}
             onClick={handleFacultyClick}
           >
             <p style={{ color: 'white', margin: 0, fontSize: '16px' }}>Faculty</p>
+            <div style={{ display: 'flex',          // Make the container a flex container
+        flexDirection: 'column', // Arrange children vertically
+        alignItems: 'center',     // Center children horizontally
+        justifyContent: 'center' }}>
             <TeamOutlined style={{ fontSize: '24px', color: 'white' }} />
+            </div>
           </Card>
         </div>
       </div>
